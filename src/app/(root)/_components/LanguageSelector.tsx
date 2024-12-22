@@ -1,4 +1,4 @@
-function LanguageSelector() {
+function LanguageSelector({hasAccess}: {hasAccess: boolean}) {
   return (
     <div>LanguageSelector</div>
   )
