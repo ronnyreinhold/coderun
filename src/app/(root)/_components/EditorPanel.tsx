@@ -9,7 +9,7 @@ import { RotateCcwIcon, ShareIcon, TypeIcon } from "lucide-react";
 import { useClerk } from "@clerk/nextjs";
 import { EditorPanelSkeleton } from "./EditorPanelSkeleton";
 import useMounted from "@/hooks/useMounted";
-//import ShareSnippetDialog from "./ShareSnippetDialog";
+import ShareSnippetDialog from "./ShareSnippetDialog";
 
 function EditorPanel() {
   const clerk = useClerk();
@@ -40,7 +40,7 @@ function EditorPanel() {
   };
 
   const handleFontSizeChange = (newSize: number) => {
-    const size = Math.min(Math.max(newSize, 12), 24);
+    const size = Math.min(Math.max(newSize, 9), 20);
     setFontSize(size);
     localStorage.setItem("editor-font-size", size.toString());
   };
@@ -68,8 +68,8 @@ function EditorPanel() {
               <div className="flex items-center gap-3">
                 <input
                   type="range"
-                  min="12"
-                  max="24"
+                  min="9"
+                  max="20"
                   value={fontSize}
                   onChange={(e) => handleFontSizeChange(parseInt(e.target.value))}
                   className="w-20 h-1 bg-gray-600 rounded-lg cursor-pointer"
