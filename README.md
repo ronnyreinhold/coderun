@@ -7,5 +7,5 @@ Você já pensou em testar um snippet de código, mas desistiu porque não tinha
 Pois bem, o `Zero Bugs` veio para simplificar esse processo.
 
 ## ScreenShots
-![Zero Bugs](../coderun/public/zeroBugsPrint.png)
+![Zero Bugs](./public/zeroBugsPrint.png)
 
