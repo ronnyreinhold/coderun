@@ -43,7 +43,7 @@ function ShareSnippetDialog({ onClose }: { onClose: () => void }) {
         <form onSubmit={handleShare}>
           <div className="mb-4">
             <label htmlFor="title" className="block text-sm font-medium text-gray-400 mb-2">
-              Snippet Title:
+              Title:
             </label>
             <input
               type="text"
